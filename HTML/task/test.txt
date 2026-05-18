@@ -1,0 +1,102 @@
+1) HTML stands for HyperText Markup Language.It is used to create and structure webpages.
+     HyperText → Links between web pages.
+     Markup Language → Uses tags to “mark” content and tell the browser how to display it
+
+
+2)
+HTML	HTML5
+Older version of HTML
+Limited multimedia support
+Uses many plugins
+Less semantic tags
+No local storage	Latest version
+Supports audio and video directly 
+No need for plugins like Flash
+Added semantic tags
+Supports local storage
+
+3)It helps the browser display the webpage correctly.Without it, browsers may behave differently.
+  <!DOCTYPE html> tells the browser that the webpage is written in HTML5.
+  It helps the browser display the page correctly.
+
+4)
+HTML elements:
+	HTML Tags:
+The HTML element consists of both the opening and closing tags as well as what’s inside those tags. It normally consists of some structure that’s used to define the respective tags	HTML Tags are the starting and ending parts of an HTML element. They begin with < symbol and end with > symbol. Whatever is written inside < and > are called tags
+
+5)Semantic tags are HTML tags that clearly describe the meaning of the content inside them.
+example:
+<header>
+<nav>
+<section>
+<article>
+<aside>
+<footer>  
+
+6)         
+Semantic tags	Non-Semantic tags
+easy to understand the webpage structure 
+better for SEO and accessibility 
+describe the purpose of content	structure is not understand 
+it will not better for SEO
+it will use mainly for design and grouping
+<header>
+<nav>
+<section>
+<article>
+<footer>	<div>
+<span>
+
+7)Meta tags are HTML tags that provide information about a webpage to browsers and search engines.
+Use of meta tags
+Improve SEO
+Define webpage description
+Set character encoding
+Make webpage responsive on mobile
+Provide author and keyword information
+
+8) The <source> tag is used to specify different media file formats inside <audio> and <video> tags.
+   because it  will give some  professionality  
+   Different browsers support different file formats, so using multiple <source> tags helps the media play in all browsers.
+
+9)An <iframe> (Inline Frame) is used to display another webpage, video, map, or website inside the current webpage.
+   
+  Real-Time Uses of iframe
+
+    Embedding YouTube videos 
+    Showing Google Maps    
+    Social media posts
+    Online ads
+
+10)
+Block-level elements 	inline-level elements
+it will start on new line 
+it will take full width 
+it will used for large content 
+	it don't start in new line
+it will take only required width for content 
+it will used for small content 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Online Food Order Website">
+  <meta name="keywords" content="food, online order, restaurant">
+  <meta name="author" content="Harsha">
+  <title>Online Food Order</title>
+</head>
+
+<body>
+<center>
+  <header>
+    <h1>Foodie Express</h1>
+    <p>Order your favourite food online</p>
+
+    <nav>
+      <a href="#home">Home</a> |
+      <a href="#menu">Menu</a> |
+      <a href="#order">Order</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main id="home">
+    <section>
+      <h2>Welcome to Foodie Express</h2>
+      <p>
+        Delicious food delivered to your doorstep in minutes.
+        Order your favorite meals from top restaurants near you with fast and safe delivery.
+        We deliver fresh and tasty food to your doorstep.
+        Choose your favourite dish and order now.
+        FoodieHub is an online food ordering platform where users can explore different cuisines, order food easily, and enjoy quick delivery service.
+        We provide tasty food, exciting offers, and a smooth ordering experience for customers.
+        FoodieHub is one of the best online food ordering platforms designed to make food ordering simple, quick, and enjoyable.
+Users can explore a variety of restaurants, compare prices, check ratings, and order food within minutes.Taste your favorite food anytime, anywhere.
+FoodieHub brings delicious meals from the best restaurants directly to your doorstep with fast and reliable delivery service.
+      </p>
+      <div>
+        <ul>
+            <li>🍕 Online Food Ordering</li>
+            <li>🚚 Fast Home Delivery</li>
+            <li>🥤 Fresh and Hygienic Food</li>
+            <li>💳 Secure Online Payment</li>
+            <li>⭐ Customer Reviews and Ratings</li>
+        </ul>
+      </div>
+
+      <img src="../assets/New folder/food-poster.jpg" alt="Delicious food image" width="400" height="400">
+    </section>
+
+    <section id="menu">
+      <h2>Our Menu</h2>
+
+      <table border="1" cellpadding="10">
+        <tr>
+          <th>Food Image</th>
+          <th>Food Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Availability</th>
+        </tr>
+
+        <tr>
+          <td><img src="../assets/New folder/WhatsApp Image 2026-05-18 at 11.39.34 AM.jpeg" alt="Pizza" width="100"></td>
+          <td>Pizza</td>
+          <td>Fast Food</td>
+          <td>₹199</td>
+          <td>Available</td>
+        </tr>
+
+        <tr>
+          <td><img src="../assets/New folder/pngtree-burger.png" alt="Burger" width="100"></td>
+          <td>Burger</td>
+          <td>Snacks</td>
+          <td>₹99</td>
+          <td>Available</td>
+        </tr>
+
+        <tr>
+          <td><img src="../assets/New folder/Chicken Biryani.jpg" alt="Biryani" width="100"></td>
+          <td>Chicken Biryani</td>
+          <td>Main Course</td>
+          <td>₹249</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td><img src="../assets/New folder/veg mells.jpeg" alt="mells" width="100"></td>
+          <td>Veg meals </td>
+          <td>Main Course</td>
+          <td>₹100</td>
+          <td>Available</td>
+        </tr>  
+        <tr>
+          <td><img src="../assets/New folder/dosa.jpeg" alt="dosa" width="100"></td>
+          <td>Dosa </td>
+          <td>Main Course</td>
+          <td>₹60</td>
+          <td>Available</td>
+          </tr> 
+            <tr>
+          <td><img src="../assets/New folder/cake.jpeg" alt="Cakes" width="100"></td>
+          <td>Cakes</td>
+          <td>Deserts</td>
+          <td>₹250</td>
+          <td>Available</td>
+        </tr>  
+                <tr>
+          <td><img src="../assets/New folder/ice_cream.jpeg" alt="Ice cream" width="100"></td>
+          <td>Ice cream</td>
+          <td>Deserts</td>
+          <td>₹100</td>
+          <td>Available</td>
+        </tr>   
+      </table>
+    </section>
+
+    <section>
+      <h2>Popular Food Items</h2>
+
+      <ul>
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Biryani</li>
+        <li>Fried Rice</li>
+        <li>Veg Meals</li>
+        <li>Dosa</li>
+      </ul>
+
+      <h3>Order Steps</h3>
+      <ol>
+        <li>Select your food</li>
+        <li>Fill order form</li>
+        <li>Make payment</li>
+        <li>Get delivery</li>
+      </ol>
+    </section>
+
+    <section id="order">
+      <h2>Order Form</h2>
+
+      <form>
+        <fieldset>
+          <legend>Customer Details</legend>
+
+          <label for="name">Full Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+          <label for="phone">Phone Number:</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required><br><br>
+
+          <label for="address">Delivery Address:</label><br>
+          <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your address" required></textarea>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Food Order Details</legend>
+
+          <label for="food">Choose Food:</label><br>
+          <select id="food" name="food" required>
+            <option value="">--Select Food--</option>
+
+            <optgroup label="Fast Food">
+              <option value="pizza">Pizza</option>
+              <option value="burger">Burger</option>
+            </optgroup>
+
+            <optgroup label="Main Course">
+              <option value="biryani">Chicken Biryani</option>
+              <option value="friedrice">Fried Rice</option>
+              <option value="dosa">Dosa</option>
+               <option value="veg meals">Veg Meals</option>
+            </optgroup>
+          </select>
+
+          <br><br>
+
+          <label for="quantity">Quantity:</label><br>
+          <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+          <br><br>
+
+          <p>Food Type:</p>
+          <input type="radio" id="veg" name="type" value="veg">
+          <label for="veg">Veg</label>
+
+          <input type="radio" id="nonveg" name="type" value="nonveg">
+          <label for="nonveg">Non-Veg</label>
+
+          <br><br>
+
+          <p>Extra Items:</p>
+          <input type="checkbox" id="cheese" name="extra" value="cheese">
+          <label for="cheese">Extra Cheese</label><br>
+
+          <input type="checkbox" id="sauce" name="extra" value="sauce">
+          <label for="sauce">Extra Sauce</label><br>
+
+          <input type="checkbox" id="drink" name="extra" value="drink">
+          <label for="drink">Cold Drink</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Payment Details</legend>
+
+          <label for="payment">Payment Method:</label><br>
+          <select id="payment" name="payment">
+            <option value="cod">Cash on Delivery</option>
+            <option value="upi">UPI</option>
+            <option value="card">Debit / Credit Card</option>
+          </select>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Place Order">
+        <input type="reset" value="Clear">
+      </form>
+    </section>
+
+    <article>
+      <h2>Special Offer</h2>
+      <p>
+        Get <strong>20% discount</strong> on your first <br>
+        Use coupon code: <mark>FOOD20</mark><br>
+        🎉 50% OFF on First Order<br>
+        🍔 Buy 1 Get 1 Free on Burgers<br>
+        🚚 Free Delivery Above ₹299<br>
+      </p>
+    </article>
+
+    <aside>
+      <h3>Delivery Time</h3>
+      <p>We deliver food within <b>30 minutes</b>.</p>
+    </aside>
+
+    <section>
+      <h2>Food Video</h2>
+      <video width="300" controls>
+        <source src="food-video.mp4" type="video/mp4">
+        Your browser does not support video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>Restaurant Audio Message</h2>
+      <audio controls>
+        <source src="offer-audio.mp3" type="audio/mpeg">
+        Your browser does not support audio tag.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Find Us</h2>
+      <iframe frameborder="0" width="800" height="400" src="https://maps.google.com/maps?width=600&height=400&hl=en&q=kk%20nagar&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
+                
+    </section>
+  </main>
+
+  <hr>
+
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: foodieexpress@gmail.com</p>
+    <p>Phone: +91 9876543210</p>
+    <p>Address: Chennai, Tamil Nadu</p>
+
+    <p>&copy; 2026 Foodie Express. All Rights Reserved.</p>
+  </footer>
+</center>
+</body>
+</html>

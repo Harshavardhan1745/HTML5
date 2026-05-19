@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML full practice website created using all basic HTML tags learned in 8 days.">
+    <meta name="keywords" content="HTML, HTML5, Forms, Tables, Semantic Tags, Audio, Video, Iframe">
+    <meta name="author" content="Harshavardhan G">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="HTML Full Practice Website">
+    <meta property="og:description" content="A complete HTML website using all important HTML tags.">
+    <meta property="og:image" content="images/website-preview.jpg">
+    <meta property="og:url" content="https://example.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>HTML Full Process Website</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>HTML Full Process Website</h1>
+        <p>Created by Harshavardhan G</p>
+        <p>Web Developer | UI & UX Designer</p>
+    </header>
+
+    <hr>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#multimedia">Multimedia</a> |
+        <a href="#iframe">Iframe</a> |
+        <a href="#forms">Forms</a> |
+        <a href="#tables">Tables</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <hr>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Home</h2>
+        <p>
+            Welcome to my HTML full practice website. This website contains all important HTML topics
+            like headings, paragraphs, links, images, lists, tables, forms, audio, video, iframe,
+            semantic tags, non-semantic tags, meta tags, and favicon.
+        </p>
+
+        <h3>Topics Covered in Last 8 Days</h3>
+        <ol>
+            <li>Basic HTML Structure</li>
+            <li>Meta Tags and Favicon</li>
+            <li>Semantic and Non-Semantic Tags</li>
+            <li>Block-level and Inline Elements</li>
+            <li>Audio, Video, and Source Tag</li>
+            <li>Iframe with YouTube and Google Map</li>
+            <li>Forms with Validation</li>
+            <li>Tables with Rowspan and Colspan</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="images/profile.jpg" alt="Profile Image" width="200">
+        <p>
+            Hi, I am Harshavardhan G. I am learning frontend development and UI/UX design.
+            I am interested in creating websites and designing user-friendly applications.
+        </p>
+
+        <h3>My Skills</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>UI/UX Design</li>
+            <li>Figma</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- Semantic Tags Example -->
+    <section>
+        <h2>Semantic Tags Example</h2>
+
+        <article>
+            <h3>What are Semantic Tags?</h3>
+            <p>
+                Semantic tags clearly describe their meaning to the browser and developer.
+                Examples: header, nav, section, article, aside, main, and footer.
+            </p>
+        </article>
+
+        <aside>
+            <h3>Note</h3>
+            <p>Semantic tags help to improve SEO and website readability.</p>
+        </aside>
+    </section>
+
+    <hr>
+
+    <!-- Non-Semantic Tags Example -->
+    <section>
+        <h2>Non-Semantic Tags Example</h2>
+        <div>
+            <p>This content is inside a div tag. Div is a block-level non-semantic tag.</p>
+        </div>
+        <p>This is a <span>span tag</span>. Span is an inline non-semantic tag.</p>
+    </section>
+
+    <hr>
+
+    <!-- Multimedia Section -->
+    <section id="multimedia">
+        <h2>Multimedia Section</h2>
+
+        <h3>Audio Player</h3>
+        <audio controls>
+            <source src="audio/song.mp3" type="audio/mpeg">
+            <source src="audio/song.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Auto Play Audio Example</h3>
+        <audio controls autoplay muted loop>
+            <source src="audio/music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video Player</h3>
+        <video width="400" controls>
+            <source src="video/sample.mp4" type="video/mp4">
+            <source src="video/sample.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+
+        <h3>Video with Poster, Autoplay, Muted and Loop</h3>
+        <video width="400" controls poster="images/poster.jpg" autoplay muted loop>
+            <source src="video/intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <hr>
+
+    <!-- Iframe Section -->
+    <section id="iframe">
+        <h2>Iframe Section</h2>
+
+        <h3>YouTube Video Embed</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dD2EISBDjWM" title="YouTube video" allowfullscreen></iframe>
+
+        <h3>Google Map Embed</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.257909141272!2d80.270718!3d13.0826802"
+            width="560"
+            height="315"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <hr>
+
+    <!-- Forms Section -->
+    <section id="forms">
+        <h2>Forms Section</h2>
+
+        <h3>Student Registration Form</h3>
+        <form>
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname" placeholder="Enter your name" required><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label>Password:</label><br>
+            <input type="password" name="password" minlength="6" maxlength="12" placeholder="Enter password" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other<br><br>
+
+            <label>Skills:</label><br>
+            <input type="checkbox" name="skills" value="html"> HTML
+            <input type="checkbox" name="skills" value="css"> CSS
+            <input type="checkbox" name="skills" value="js"> JavaScript<br><br>
+
+            <label>Course:</label><br>
+            <select name="course">
+                <option value="frontend">Frontend Development</option>
+                <option value="uiux">UI/UX Design</option>
+                <option value="mern">MERN Stack</option>
+            </select><br><br>
+
+            <label>Address:</label><br>
+            <textarea name="address" rows="4" cols="40" placeholder="Enter your address"></textarea><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+
+        <hr>
+
+        <h3>Login Form</h3>
+        <form>
+            <label>Username:</label><br>
+            <input type="text" name="username" placeholder="Enter username" required><br><br>
+
+            <label>Password:</label><br>
+            <input type="password" name="loginpassword" placeholder="Enter password" required><br><br>
+
+            <input type="submit" value="Login">
+        </form>
+
+        <hr>
+
+        <h3>College Admission Form</h3>
+        <form>
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label>Name:</label><br>
+                <input type="text" name="studentname" required><br><br>
+
+                <label>Date of Birth:</label><br>
+                <input type="date" name="dob"><br><br>
+
+                <label>Department:</label><br>
+                <select name="department">
+                    <optgroup label="Engineering">
+                        <option>CSE</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                    </optgroup>
+                    <optgroup label="Arts">
+                        <option>BCA</option>
+                        <option>B.Sc CS</option>
+                        <option>B.Com</option>
+                    </optgroup>
+                </select><br><br>
+
+                <input type="submit" value="Apply Now">
+            </fieldset>
+        </form>
+
+        <hr>
+
+        <h3>Resume Builder Form</h3>
+        <form>
+            <label>Personal Details:</label><br>
+            <input type="text" placeholder="Full Name"><br><br>
+            <input type="email" placeholder="Email"><br><br>
+            <input type="tel" placeholder="Phone Number"><br><br>
+
+            <label>Education Details:</label><br>
+            <textarea rows="3" cols="40" placeholder="Enter education details"></textarea><br><br>
+
+            <label>Skills:</label><br>
+            <textarea rows="3" cols="40" placeholder="Enter your skills"></textarea><br><br>
+
+            <label>Experience:</label><br>
+            <textarea rows="3" cols="40" placeholder="Enter experience"></textarea><br><br>
+
+            <label>Upload Resume:</label><br>
+            <input type="file"><br><br>
+
+            <input type="submit" value="Create Resume">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Tables Section -->
+    <section id="tables">
+        <h2>Tables Section</h2>
+
+        <h3>Employee Details Table</h3>
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Role</th>
+            </tr>
+            <tr>
+                <td rowspan="2">101</td>
+                <td>Arun</td>
+                <td>IT</td>
+                <td>Frontend Developer</td>
+            </tr>
+            <tr>
+                <td>Kumar</td>
+                <td>Design</td>
+                <td>UI Designer</td>
+            </tr>
+            <tr>
+                <td colspan="4">End of Employee Details</td>
+            </tr>
+        </table>
+
+        <h3>Product Details Table</h3>
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Product Image</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Stock</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td><img src="images/burger.jpg" alt="Burger" width="100"></td>
+                <td>Burger</td>
+                <td>Food</td>
+                <td>Available</td>
+                <td>10</td>
+                <td>₹120</td>
+            </tr>
+            <tr>
+                <td><img src="images/pizza.jpg" alt="Pizza" width="100"></td>
+                <td>Pizza</td>
+                <td>Food</td>
+                <td>Available</td>
+                <td>5</td>
+                <td>₹250</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:harsha@example.com">harsha@example.com</a></p>
+        <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">Visit My GitHub</a></p>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Harshavardhan G. All Rights Reserved.</p>
+        <p>This website is created using HTML only.</p>
+    </footer>
+
+</body>
+</html>

@@ -89,3 +89,29 @@
     flex-direction: column;
     padding: 20px;
 }
+.parent-three{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.heading-two{
+    padding: 10px;
+    margin: 10px;
+}
+.child-two{
+    background-color: rgb(48, 46, 46);
+    height: 80px;
+    width: 300px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.child-two p {
+    font-size: 12px;
+}
+.container{
+    display: flex;
+    padding: 10px;
+}

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(211, 211, 211, 0.797);
+}
+.card{
+    background-color: white;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: 700;
+    color: #111827;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+.card:hover{
+    background-color: #111827;
+    color: white;
+    transform: translateY(-6px);
+}

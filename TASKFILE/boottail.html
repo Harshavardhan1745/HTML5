@@ -3,43 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap & Tailwind CSS</title>
-    <link rel="stylesheet" href="boottail.css">
+    <title>HTML tasks</title>
+    <link rel="stylesheet" href="htmltask.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <main>
-        <a href="../TASKFILE/taskpage.html">
-            <h1 class="p-5 font-bold text-gray-900">↼ Back to Home</h1>
-        </a>
+        <div class="p-5">
+            <div>
+                <a href="taskfile.html" class="text-orange-500 font-bold bg-white p-3 rounded-md shadow-lg hover:bg-orange-500 hover:text-white hover:-translate-x-2 hover:border-white">Back to Home</a>
+            </div>
+        </div>
+            <div class="bg-white rounded-md shadow-lg p-5 m-5">
+                <div class="flex flex-col gap-5">
+                  <h1 class="text-orange-500 text-xl font-bold text-center">Bootstrap Tasks</h1>
+                  <p class="font-bold text-4xl text-center">Completed Bootstrap Step by Step</p>
+                  <p class="text-gray-500 text-center ">Follow these tasks like a roadmap and build strong Bootstrap basics</p>
+           </div>
+       </div>
     </main>
     <section>
-        <div>
-            <h1 class="font-bold text-3xl text-center p-2 text-gray-900">CSS Tasks</h1>
-            <p class="text-gray-500 text-center p-2">All HTML day-wise assignments</p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <a href="../BOOTSTRAP/Day1/basicweb.html" class="card m-5">
-                <h3 class="font-bold">Day 1 - Task 1</h3>
-            </a>
-            <a href="../BOOTSTRAP/Day2/responsivegrid.html" class="card m-5">
-                <h3 class="font-bold">Day 2 - Task 1</h3>
-            </a>
-            <a href="../BOOTSTRAP/Day2/navbartailwind.html" class="card m-5">
-                <h3 class="font-bold">Day 2 - Task 2</h3>
-            </a>
-            <a href="../BOOTSTRAP/Day2/tailwindcard.html" class="card m-5">
-                <h3 class="font-bold">Day 2 - Task 3</h3>
-            </a>
-            <a href="../BOOTSTRAP/Day2/tailwindprofile.html" class="card m-5">
-                <h3 class="font-bold">Day 2 - Task 4</h3>
-            </a>
-            <a href="../BOOTSTRAP/Day3/Responsivecoursecards.html" class="card m-5">
-                <h3 class="font-bold">Day 3 - Task 1</h3>
-            </a>
-            <a href="../BOOTSTRAP/Day4/" class="card m-5">
-                <h3 class="font-bold">Day 2 - Task 2</h3>
-            </a>
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 p-6">
+            <div class="bg-white rounded-md shadow-lg p-5 hover:-translate-y-2">
+                <div><h1 class="font-bold text-3xl  p-5">Day1</h1></div>
+                <div class="pl-6 flex gap-5">
+                    <a href="../BOOTSTRAP/Day1/basicweb.html" class="border-2 border-orange-500  p-2 bg-white rounded-xl hover:bg-orange-500 hover:text-white">Task 1</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-md shadow-lg p-5 hover:-translate-y-2">
+                <div><h1 class="font-bold text-3xl  p-5">Day2</h1></div>
+                <div class="pl-6 flex gap-5">
+                    <a href="../BOOTSTRAP/Day2/navbartailwind.html" class="border-2 border-orange-500  p-2 bg-white rounded-xl hover:bg-orange-500 hover:text-white">Task 1</a>
+                    <a href="../BOOTSTRAP/Day2/responsivegrid.html" class="border-2 border-orange-500  p-2 bg-white rounded-xl hover:bg-orange-500 hover:text-white">Task 2</a>
+                </div>
+            </div>
         </div>
     </section>
 </body>

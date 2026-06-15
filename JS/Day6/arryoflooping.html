@@ -51,6 +51,51 @@
     }
     console.log(empty);
 
+    let fruits = ["Apple", "Mango", "Orange", "Banana"]
+    for (let l = 0; l <= fruits.length; l++) {
+        if (fruits[1] === "Mango") {
+            console.log("Fruit found");
+        }
 
+    }
+
+
+    let fruit = ["Apple", "Mango", "Orange", "Banana"]
+    let count = 0
+    for (let value of fruit) {
+        count++
+    }
+    console.log(count);
+
+    let namee = ["Vijay", "Ajith", "Sivakarthikeyan", "SK"]
+    let long = namee[0]
+    for (let n = 1; n < namee.length; n++) {
+        if (namee[n].length > long.length) {
+            long = namee[n]
+        }
+    }
+    console.log(long);
+
+
+    let word = "level"
+    let reverse = ""
+    for (let w = word.length - 1; w >= 0; w--) {
+        reverse += word[w]
+    }
+    if (word === reverse) {
+        console.log("Palindrome");
+    } else {
+        console.log("Not a Palindrome");
+
+    }
+
+
+    let rev = "VIJAY"
+    let reversed = ""
+    for (let v = rev.length - 1; v >= 0; v--) {
+        reversed = reversed + rev[v]
+    }
+    console.log(reversed);
+    
 
 </script>

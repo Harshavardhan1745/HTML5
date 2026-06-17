@@ -1,17 +1,42 @@
 <script>
-    // let  arr = [1,2,3,4,5,6,7,8]
-    // let change = arr.includes(2)
-    // console.log(change);
-    // let data = arr.slice(2,5)
-    // console.log(data);
-    // let changes = arr.splice(2,5)
-    // console.log(changes);
-    
+    let courseList = ["HTML","CSS","JavaScript"]
+    let addCourse = courseList.push("React","Node.js")
+    console.log(courseList);
 
-    let  arr = [1,2,3,4,[77,55,44,88],5,6,7,8]
-    let change = arr[4].slice(2)
-    console.log(change);
+    let course = ["HTML","CSS","JavaScript","React"]
+    let change = course.pop()
+    console.log('Removed item',change);
+    console.log(course);
     
+    let fruitList = ["Apple","Mango","Orange","Banana"]
+    let removeFruit = fruitList.shift()
+    console.log('Removed item',removeFruit);
+    console.log(fruitList);
+    
+    let herosList = ["Ajith","Suriya","SK"]
+    let addHero = herosList.unshift("Vijay","Dhanush")
+    console.log('Final list ',herosList);
 
+    let arr = ["HTML","CSS","Bootstrap","React"]
+    let changearr = arr.splice(2,1 ,"Javascript")
+    console.log(changearr);
+    console.log(arr);
+    
+    let array = ["HTML","CSS","JavaScript","React","Node"]
+    let newarray = array.slice(2,4)
+    console.log(newarray);
+
+    let student  = { name:"Harsha",course:"MERN",city:"Chennai",age:21}
+    for (const name in student) {
+       console.log(name,':',student[name]);
+    }
+    
+    let movieList = [{name:"Vijai",movie:"GOAT"},
+        {name:"Ajith",movie:"Vidaamuyarchi"},
+        {name:"Suriya",movie:"Kanguva"}
+    ]
+    for(m=0;m<=movieList.length;m++){
+        console.log(movieList[m].name + "-" + movieList[m].movie);
+    }
 
 </script>

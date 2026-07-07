@@ -1,6 +1,7 @@
 import Navbar from "./componets/Navbar"
 import Profilecard from "./componets/Profilecard"
 import Banner from "./componets/Banner"
+import Moviecard from "./componets/Moviecard"
 
 const App = () =>{
   
@@ -17,6 +18,7 @@ const App = () =>{
     <Profilecard/>
     <br /><br /><br />        
     <Banner/>
+    <Moviecard/>
     </>
   )
 

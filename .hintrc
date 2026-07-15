@@ -8,6 +8,13 @@
       {
         "image-alt": "off"
       }
-    ]
+    ],
+    "axe/aria": [
+      "default",
+      {
+        "aria-progressbar-name": "off"
+      }
+    ],
+    "no-inline-styles": "off"
   }
 }

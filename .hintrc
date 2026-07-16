@@ -3,12 +3,6 @@
     "development"
   ],
   "hints": {
-    "axe/text-alternatives": [
-      "default",
-      {
-        "image-alt": "off"
-      }
-    ],
     "axe/aria": [
       "default",
       {

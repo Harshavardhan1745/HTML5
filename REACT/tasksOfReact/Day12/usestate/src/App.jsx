@@ -1,120 +1,96 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState } from "react"
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+
+  const [student,setStudent] = useState({name : "Harsha",Course : "React"})
+  
+  const clicktochange = () => {
+    setStudent({...student,Course:"MERN STACK"})
+  }
+
+  const [product ,setProduct] = useState({Name : "Mobile", Price:20000})
+
+  const updateprice = () => {
+    setProduct({...product,Price:25000})
+  }
+
+  const [heroes , setHeroes] = useState(["Ajith","Vijai","Dhanush"])
+
+  const updatehero = () => {
+    const update = [...heroes]
+    update[1] = "SK"
+    setHeroes(update)
+  }
+
+  const [number,setNumber] = useState ([1,2,3,4,5,6])
+
+  const updatenumber = () => {
+    const change = [...number]
+    change[2] = 100
+    setNumber(change)
+  }
+
+  const [fruits,setFruits] = useState(["Apple","Orange"])
+
+  const updatefruit = () => {
+    const add = [...fruits]
+    add.pop()
+    add.push("Banana")
+    setFruits(add)
+  }
+
+  const [namelist,setNameList] = useState([{id:1,name:"Harsha"},{id:2,name:"Pooja"}])
+
+  const updatename = () => {
+    const update = [...namelist]
+    update[0] = {...update[0],name:"Harshavardhan"}
+    update.push({id:3,name:"sam"})
+    update.splice(0,1)
+    setNameList(update)
+  }
 
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div>
+      <h1>{student.name}</h1>
+      <h1>{student.Course}</h1>
+      <button onClick={clicktochange}>Change</button>
+    </div>
 
-      <div className="ticks"></div>
+    <div>
+      <h1>{product.Nameame}</h1>
+      <h1>{product.Price}</h1>
+      <button onClick={updateprice}>Change</button>
+    </div>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+    {heroes.map((e,i)=>(
+      <div key={i+1}>
+        <h1>{e}</h1>
+      </div>
+    ))}
+    <button onClick={updatehero}>Update</button>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+    {number.map((e,i)=>(
+      <div key={i+1}>
+        <h1>{e}</h1>
+      </div>
+    ))}
+    <button onClick={updatenumber}>Change</button>
+
+    {fruits.map((e,i)=>(
+      <div key={i+1}>
+        <h1>{e}</h1>
+      </div>
+    ))}
+    <button onClick={updatefruit}>Change</button>
+
+    {namelist.map((e,i)=>(
+      <div key={i+1}>
+        <p>{e.id}</p>
+        <p>{e.name}</p>
+      </div>
+    ))}
+    <button onClick={updatename}>Change</button>
     </>
   )
 }

@@ -13,22 +13,35 @@ const App = () => {
     setAddData("")
   }
 
-  
+  const [studentname,setStudentName] = useState("")
+  const [studentcourse,setStudentCourse] = useState("")
+
+  const [stddata,setStdData] = useState({name:"",course:""})
+
+  const handleSubmit = () => {
+    setStdData({
+      name: studentname,
+      course: studentcourse,
+    })
+
   return (
     <>
     <div>
       <input type="text" value={adddata} placeholder="Enter your name" onChange={adddatas}/>
-      <button className="" onClick={showaddvalue}>Show value</button>
+      <button onClick={showaddvalue}>Show value</button>
       <h1>{data}</h1>
     </div>
    
    <div>
-    <input type="text" placeholder="Enter your name " onChange={addstudentname}/>
-    <input type="text" placeholder="Enter your course " onChange={addstudentcourse}/>
-    <button></button>
+    <input type="text" placeholder="Enter your name " onChange={(e) => setStudentName(e.target.value)}/>
+    <input type="text" placeholder="Enter your course " onChange={(e) => setStudentCourse(e.target.value)}/>
+    <button onClick={handleSubmit}> add </button>
    </div>
+   <h2>Student Name: {stddata.name}</h2>
+        <h2>Course: {stddata.course}</h2>
     </>
   )
+}
 }
 
 export default App

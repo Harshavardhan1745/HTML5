@@ -43,7 +43,7 @@
                                 class="fa-solid fa-box"></i> Materials</a></li>
                     <li><a href="#" class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i
                                 class="fa-solid fa-calendar-days"></i> Schedule</a></li>
-                    <li><a href="#" class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i
+                    <li><a href="siteMonitoring.html" class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i
                                 class="fa-solid fa-location-dot"></i> Site Monitoring</a></li>
                     <li><a href="#" class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i
                                 class="fa-solid fa-chart-line"></i> Reports</a></li>
@@ -208,29 +208,33 @@
                             <div>
                                 <h1 class="mb-1 text-sm text-gray-500 font-medium">Hospital Building</h1>
                                 <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%;"
-                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                    <div class="progress-bar bg-success progress-fill" role="progressbar"
+                                        style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%
+                                    </div>
                                 </div>
                             </div>
                             <div>
                                 <h1 class="mb-1 text-sm text-gray-500 font-medium">Apartment </h1>
                                 <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;"
-                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                    <div class="progress-bar bg-warning progress-fill" role="progressbar"
+                                        style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%
+                                    </div>
                                 </div>
                             </div>
                             <div>
                                 <h1 class="mb-1 text-sm text-gray-500 font-medium">Bridge Project</h1>
                                 <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%;"
-                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                    <div class="progress-bar bg-success progress-fill" role="progressbar"
+                                        style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%
+                                    </div>
                                 </div>
                             </div>
                             <div>
                                 <h1 class="mb-1 text-sm text-gray-500 font-medium">Mall Construction </h1>
                                 <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 40%;"
-                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+                                    <div class="progress-bar bg-danger progress-fill" role="progressbar"
+                                        style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -516,7 +520,7 @@
                 clearInterval(interval);
             }
         }, 20);
-        
+
         const counters = document.getElementById("activewrkcount");
         let counts = 0;
         let targets = 450;
@@ -526,8 +530,24 @@
             if (counts >= targets) {
                 clearInterval(intervals);
             }
-        }, 5);
+        }, 1);
 
+
+        window.addEventListener("load", () => {
+
+            const bars = document.querySelectorAll(".progress-fill");
+
+            bars.forEach((bar, index) => {
+
+                const width = bar.dataset.width;
+
+                setTimeout(() => {
+                    bar.style.width = width + "%";
+                }, index * 300);
+
+            });
+
+        });
     </script>
 </body>
 

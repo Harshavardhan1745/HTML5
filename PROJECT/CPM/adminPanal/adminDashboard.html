@@ -54,7 +54,8 @@
                 <ul class="flex flex-col gap-6 p-4">
                     <li><a href="#" class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i
                                 class="fa-solid fa-gear"></i> Settings</a></li>
-                    <li><a href="../adminPanal/adminPanel.html" class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i
+                    <li><a href="../adminPanal/adminPanel.html"
+                            class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i
                                 class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
                 </ul>
             </div>
@@ -72,7 +73,7 @@
                                 <p class="text-sm font-medium text-gray-500">
                                     Total Projects
                                 </p>
-                                <h1 class="text-4xl font-bold text-slate-800 mt-2">
+                                <h1 id="totalcount" class="text-4xl font-bold text-slate-800 mt-2">
                                     25
                                 </h1>
                             </div>
@@ -81,7 +82,7 @@
                             </p>
                         </div>
                         <div
-                            class="w-14 h-14 rounded-xl border border-gray-200 flex items-center justify-center text-2xl">
+                            class="w-14 h-14 rounded-xl border border-gray-200 flex items-center justify-center text-2xl ">
                             <i class="fa-solid fa-building "></i>
                         </div>
                     </div>
@@ -94,7 +95,7 @@
                                 <p class="text-sm font-medium text-gray-500">
                                     Active Workers
                                 </p>
-                                <h1 class="text-4xl font-bold text-slate-800 mt-2">
+                                <h1 id="activewrkcount" class="text-4xl font-bold text-slate-800 mt-2">
                                     450
                                 </h1>
                             </div>
@@ -503,6 +504,31 @@
 
 
     <script src="https://kit.fontawesome.com/c219e56bfb.js" crossorigin="anonymous"></script>
+
+    <script>
+        const counter = document.getElementById("totalcount");
+        let count = 0;
+        let target = 25;
+        let interval = setInterval(() => {
+            count++;
+            counter.innerText = count;
+            if (count >= target) {
+                clearInterval(interval);
+            }
+        }, 20);
+        
+        const counters = document.getElementById("activewrkcount");
+        let counts = 0;
+        let targets = 450;
+        let intervals = setInterval(() => {
+            counts++;
+            counters.innerText = counts;
+            if (counts >= targets) {
+                clearInterval(intervals);
+            }
+        }, 5);
+
+    </script>
 </body>
 
 </html>
